@@ -4,7 +4,7 @@ import java.util.*;
 
 class ConvertAlphabets{
 	
-	private static final String consonants = "BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz";
+	private static final String consonants = "BCDFGHJKLMNPQRSTVWXYZ";
 	private int consLength = consonants.length();
 	
 	public String alterString(String str) {
@@ -32,7 +32,7 @@ public class Excersice_3 {
 		System.out.print("Enter the String value : ");
 		stringInput = input.nextLine();
 		System.out.println("Before altering String : "+stringInput);
-		System.out.println("After altering String : "+c.alterString(stringInput));
+		System.out.println("After altering String : "+c.alterString(stringInput.toUpperCase()));
 	}
 
 }
